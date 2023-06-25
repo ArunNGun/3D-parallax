@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: black; */
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 1.9rem;
+    font-family: 'Lobster Two', cursive;
+}
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.search a {
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+.hamburger{
+    padding-left: 1.5rem;
+}
+.hamburger a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115,115,115,0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.hamburger .bar::before,
+.hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+.hamburger .bar::before{
+    top: -4.5px;
+}
+.hamburger .bar::after{
+    top: 4.5px;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.2,.49,.32,.99);
+}
+.bg-img{
+    position: absolute;
+    width: 194.44%;
+    top: 1.86%;
+    left: 50.69%;
+    z-index: 1;
+}
+.fog-7 {
+    z-index: 2;
+    position: absolute;
+    width: 132%;
+    top: 37.7%;
+    left: 70.8%;
+}
+.mountain-10 {
+    z-index: 3;
+    position: absolute;
+    width: 71.52%;
+    top: 63.58%;
+    left: 67.84%;
+}
+.fog-6 {
+    z-index: 4;
+    position: absolute;
+    width: 127.50%;
+    top: 61.73%;
+    left: 50.49%;
+}
+.mountain-9 {
+    z-index: 5;
+    position: absolute;
+    width: 32.15%;
+top: calc(50% + 14.69%);
+left: calc(50% - 31.74%);
+}
+.mountain-8 {
+    z-index: 6;
+    position: absolute;
+    width: 54.58%;
+top: calc(50% + 11.85%);
+left: calc(50% - 14.03%);
+}
+.fog-5 {
+    z-index: 7;
+    position: absolute;
+    width: 31.18%;
+    top: calc(50% + 21.11%);
+    left: calc(50% + 2.01%);
+}
+.mountain-7 {
+    z-index: 8;
+    position: absolute;
+    width: 31.18%;
+top: calc(50% + 21.11%);
+left: calc(50% + 2.01%);
+}
+
+.text{
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 16.05%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    pointer-events: auto;
+}
+.text h2{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+}
+.text h1{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88
+}
+
+.mountain-6 {
+    z-index: 10;
+    position: absolute;
+    width: 26.68%;
+top: calc(50% + 10.68%);
+left: calc(50% + 40.97%);
+
+}
+.fog-4 {
+    z-index: 11;
+    position: absolute;
+    width: 37.71%;
+top: calc(50% + 29.88%);
+left: calc(50% - 4.44%);
+
+}
+.mountain-5 {
+    z-index: 12;
+    position: absolute;
+    width: 37.36%;
+top: calc(50% + 33.09%);
+left: calc(50% + 9.03%);
+
+}
+.fog-3 {
+    z-index: 13;
+    position: absolute;
+    width: 99.65%;
+top: calc(50% + 18.43%);
+left: calc(50% - 1.94%);
+
+}
+.mountain-4 {
+    z-index: 14;
+    position: absolute;
+    width: 49.79%;
+top: calc(50% + 27.28%);
+left: calc(50% - 26.45%);
+
+}
+.mountain-3 {
+    z-index: 15;
+    position: absolute;
+    top: 61.35%;
+    left: 101.11%;
+    width: 32.22%;
+}
+
+.fog-2{
+    z-index: 16;
+    position: absolute;
+    top:68.14%;
+    left: 48%;
+    width: 108.33%;
+} 
+.mountain-2 {
+    z-index: 17;
+    position: absolute;
+ top: 69.01%;
+ left: 78.61%;
+ width: 47.91%;
+}
+.mountain-1 {
+    position: absolute;
+    z-index: 18;
+ top: 52%;
+ left: 8.27%;
+ width: 37.15%;
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.fog-1{
+    z-index: 21;
+    position: absolute;
+    top: 59.26%;
+    left: 50.69%;
+    width: 111.8%;
+} 
+.vignette{
+   position: absolute;
+   z-index: 100;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   pointer-events: none;
+   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7)); 
+}
+
+/* media queries */
+
+@media (max-width: 1100px) {
+    .text h1{
+        font-size: 5.8rem;
+    }
+    .text h2{
+        font-size: 4.7rem;
+    }
+}
+@media (max-width: 725px) {
+    .text h1{
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .text h2{
+        font-size: 4.1rem;
+        line-height: 1.1;
+    }
+    header nav {
+        padding: 0 1rem;
+    }
+    .logo{
+        width: 75px;
+    }
+    header ul a{
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+    .search a{
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+    }
+    .hamburger{
+        padding-left: 0.9rem;
+    }
+    .hamburger a{
+        height: 30px;
+        width: 30px;
+    }
+    .bg-img{
+        width: initial;
+        height: 311.104%;
+    }
+
+    .fog-7{
+        width: initial;
+        height: 211.2%;
+    }
+    .mountain-10{
+        width: initial;
+        height: 114.432%;
+    }
+    .fog-6{
+        width: initial;
+        height: 204%;
+    }
+    .mountain-9 {
+        width: initial;
+        height: 51.44%;
+    }
+    .mountain-8 {
+        width: initial;
+        height: 87.328%;
+    }
+    .mountain-7 {
+        width: initial;
+        height: 49.888%;
+    }
+    .mountain-6 {
+        width: initial;
+        height: 42.688%;
+    }
+    .mountain-5 {
+        width: initial;
+        height: 59.776%;
+    }
+    .mountain-4 {
+        width: initial;
+        height: 79.664%;
+    }
+    .mountain-3 {
+        width: initial;
+        height: 51.552%;
+    }
+    .fog-5{
+        width: initial;
+        height: 49.888%;
+    }
+    .fog-4{
+        width: initial;
+        height: 60.336%;
+    }
+    .fog-3{
+        width: initial;
+        height: 159.44%;
+    }
+    /* need more values here */
+    .fog-2{
+        width: initial;
+        height: 173.32%;
+    }
+    .mountain-2{
+        width: initial;
+        height: 76.656%;
+    }
+    .mountain-1{
+        width: initial;
+        height: 109.44%;
+    }
+    .fog-1{
+        width: initial;
+        height: 178.88%;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .text h1{
+        font-size: 3.3rem;
+    }
+    .text h2{
+        font-size: 2.6rem;
+    }
+}
